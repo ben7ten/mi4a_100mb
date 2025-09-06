@@ -47,9 +47,9 @@ jobs:
     
     - name: Rebuild toolchain
       run: |
-        cd padavan-ng/toolchain-mipsel
-        make clean
-        make
+        cd padavan-ng/trunk
+        make toolchain-clean
+        make toolchain
         
     - name: Build firmware
       run: |
